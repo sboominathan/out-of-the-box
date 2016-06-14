@@ -9,6 +9,11 @@
   <link href="stylesheets/style.css" rel='stylesheet' type='text/css' />
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css' />
   <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,900' rel='stylesheet' type='text/css'>
+
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src = "/javascripts/index.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  
 </head>
 
 <body>
@@ -25,10 +30,10 @@
 
       <div class="collapse navbar-collapse" id="navbar-collapse">
         <ul class="nav navbar-nav">
-          <li><a id="goto-explore" href = "#main">EXPLORE</a></li>
-          <li><a id="blue" href="https://techx.wufoo.com/forms/projx-funding-application-2015/">APPLY</a></li>
+          <li><a id="about" href = "#main">ABOUT</a></li>
+          <li><a id="blue">APPLY</a></li>
           <li><a id="goto-faq" href ="#faq" >FAQ</a></li>
-          <li><a id="goto-terms" href = "#terms">TERMS</a></li>
+          <li><a id="dates" href = "#terms">TIMELINE</a></li>
         </ul>
       </div>
     </div>
@@ -36,46 +41,17 @@
 
 
   <section id="main">
-    <h1 class="main-header">Proj<span class="main-header-x">x</span></h1>
-    <div class="subtitle">Student funding for student projects</div>
+    <img id = "logo" src = "images/ootb-logo.png" />
   </section>
 
-  <section id="explore">
-    <div class="title">
-      EXPLORE
-    </div>
-    <p class="section-subtitle">
-      Check out previous projects we've funded
-    </p>
-    <div class="row image-bar">
-      <h1>
-          LED Matrix Coffee Table
-        </h1>
-      <h5>
-          An electronically adjustable-height coffee table with embedded Arduino-powered LED matrix.
-        </h5>
-      <h5>
-          Created by David Afolabi
-        </h5>
-    </div>
-    <div class="content">
-      Have you ever looked at a piece of furniture and thought how much better it'd be with a LEDs or if it were automated? Take
-      an ordinary table for example. Use it as a tracing table? Check! Play games like Snake and Tetris? Check! Show off
-      to friends? Definitely check! Now imagine automation. An elegant coffee table that raises to become a stylish desk?
-      Check! David Afolabi's 2014 xFair project was this stylish and futuristic table that can lighten up the mood with LEDs
-      and raise and lower itself to match the user's height.
-      <br>
-      <br> The table is made of lasercut wood and uses linear actuators attached to the legs to change height. The 15x24 LED
-      matrix made of Adafruit Neopixels is embedded under the polycarbonate table surface. The matrix is controlled by Arduino
-      and can be programmed to display any pattern within its resolution. The Arduino is able to convert any image or video
-      to format suitable for display on on the table, so any game that can fit in its 360-pixel resolution can be played
-      right on the table through two custom-built controllers that interface with the Arduino controller.
-      <br>
-      <br> David brought a previous version of this table to the 2.007 Engineering Petting Zoo. With the support of ProjX, David
-      received $500 to develop this second iteration of his project with greater LED count and vertical height adjustment.
-      This project was displayed at xFair 2015!
-      <img src="images/led_light_table_2_resize.jpg" />
-    </div>
+  <section id="subtitle">
+  	<p> An educational initiative for Boston high school students promoting science and technology </p>
+  </section>
+
+  <section id="about">
+
+
+   
   </section>
   
 	  <section id="faq">
@@ -86,157 +62,150 @@
 
 	      <div class="faq-item">
 	        <div class="question">
-	          What is ProjX?
+	          What is Out of the Box?
 	        </div>
+	        <br />
 	        <div class="answer">
-	          ProjX is a branch of TechX that provides funding for MIT student projects that involve hardware. We fund students like you
-	          every semester to bring their dream projects to life, then give you a chance to demo your creations at the annual
-	          <a href="http://xfair.mit.edu/">xFair</a>.
+	         Out of the Box is an initiative aimed at helping local, underprivileged students passionate about science develop their own innovative ideas to fruition by providing mentorship and $1,000 in seed funding for project proposals.
 	        </div>
 	      </div>
 	      <div class="faq-item">
 	        <div class="question">
-	          How much funding can I get?
+	         Who is eligible for Out of the Box?
 	        </div>
+	         <br />
 	        <div class="answer">
-	          The maximum funding that the ProjX team can provide per team is projected to be $500.
+	          Any full-time high school student and U.S. resident attending a public, private, or home-school in the Greater Boston Area at the time of his application, where the Greater Boston Area is defined as schools/homes within a 30-mile radius of Boston City Hall (1 City Hall Square, Boston, MA 02201).  All students who meet the eligibility requirements will be considered, but we especially encourage students to apply that satisfy the following criteria:
+	          <br /> <br />
+	          <ul>
+	          	<li>Have little/zero experience participating in National Science Competitions/Fairs/Olympiads or writing technical proposals</li>
+	          	<li>Coming from a high school with low admittance rates to top-tier colleges, especially rural or predominantly minority high schools</li>
+	          	<li>Potentially the first family member to attend college</li>
+	          	<li>Absence of science and engineering degrees in family</li>
+	          	<li>Underserved, defined as coming from low socioeconomic means, which may be indicated by qualification for free/reduced lunch</li>
+          	  </ul>
 	        </div>
 	      </div>
 	      <div class="faq-item">
 	        <div class="question">
-	          How do I apply for funding?
+	          How do I apply to the program?
 	        </div>
+	         <br />
 	        <div class="answer">
-	          Applications are currently open! Please apply through <a href="https://techx.wufoo.com/forms/projx-funding-application-2015/">this form</a>.
+	          Unfortunately, applications are not open right now.  They will open in early Fall 2016, so look out for the registration portal here around then!
 	        </div>
 	      </div>
 	      <div class="faq-item">
 	        <div class="question">
-	          How is the mentorship structured?
+	          What should my proposal look like?
 	        </div>
+	         <br />
 	        <div class="answer">
-	          We are in the process of modifying the mentorship program for ProjX. We hope to incorporate more involvement and support
-	          via more directed and personal guidance from ProjX mentors.
+	          The Out of the Box competition is, at its core, about a cool idea or project that a student wants to develop; we encourage applicants to submit proposals in whatever form they feel best conveys their idea. The proposal should focus on summarizing your idea’s feasibility, impact, and innovation. Some examples of potential proposals are listed below, but feel free to utilize a method not listed.
+	          <br /> <br />
+	          <ul>
+	          	<li> Written paper (1-2 pages total) </li>
+	          	<li> Video (under 5 min length) submission </li>
+	          </ul>
+	          <br />
+
+				Each submission should also include a section where an applicant(s) describes how any funding from MIT THINK would benefit them. 
+
 	        </div>
 	      </div>
 	      <div class="faq-item">
 	        <div class="question">
-	          Can I get funding for multiple projects?
+	          How are the proposals evaluated?
 	        </div>
+	         <br />
 	        <div class="answer">
-	          We believe in empowering students to explore and develop their ideas, so we will evaluate each application independently
-	          of others. Therefore, a student can be on multiple teams; however, each student may only submit one application.
+	          Proposals are evaluated by their feasibility, impact, and innovation, as well as the passion demonstrated by the student in their writing as well as in the answers to the additional short-answer questions.
 	        </div>
 	      </div>
 	      <div class="faq-item">
 	        <div class="question">
-	          Can I pivot from my original idea? If so, will this affect me aversely in the future?
+	          How does the program work, once the semifinalists are accepted?
 	        </div>
+	         <br />
 	        <div class="answer">
-	          Yes. We encourage students to pursue their passions and pivoting is an important part of innovating. As long as the new project
-	          is legitimate and would have been funded on its own, projX will continue to support you. No, this will not affect
-	          your applications aversely in the future.
+	          Once the semifinalists are accepted, they will work with mentors on the THINK team as well as MIT professors in the associated field to develop their project proposal further and learn more about the surrounding field of science.  After this process, the semifinalists that have demonstrated sufficient passion and dedication will be selected as finalists, and given $1,000 in seed funding as well as mentorship from the THINK team to develop their projects to reality.
 	        </div>
 	      </div>
 	      <div class="faq-item">
 	        <div class="question">
-	          Can I display my project at xFair even if I wasn't funded?
+	          How many students are accepted as semifinalists?  How many of these are chosen to be finalists?
 	        </div>
+	         <br />
 	        <div class="answer">
-	          Yes. We want to promote the maker culture at MIT and will do our best to support all student projects, regardless of whether
-	          or not they are affiliated with projX.
+	          There is no set number, but we expect to choose up to 15 students as semifinalists, and as many deserving semifinalists as possible to fund as finalists.
 	        </div>
 	      </div>
-	      <div class="faq-item">
-	        <div class="question">
-	          Where can I find funding outside of ProjX?
-	        </div>
-	        <div class="answer">
-	          <b>Trust Center:</b> Provides entrepreneurship resources
-	          <br><b>StartLabs:</b> Puts on events to support student entrepreneurs, stay late and hack (SLACK) nights, startup career
-	          fairs
-	          <br><b>Dorm Room Fund:</b> Provides seed funding for student startups in exchange for equity. "Venture fund for students
-	          by student."
-	          <br><b>Rough Draft VC:</b> Provides seed funding for student startups in exchange for equity. Owned by General Catalyst.
-	          <br><b>Clean energy prize:</b> prize for undergrads working on energy ideas/companies
-	          <br><b>Climate CoLab:</b> Offers prizes for climate change and related issues
-	          <br><b>GFSA:</b> Up to $20k accelerator to launch founders out of MIT for highly structured teams that are ready to
-	          launch
-	          <br><b>IDEAS Global:</b> Supports innovation and entrepreneurship through an annual competition that awards up to $10k
-	          per team for the best ideas to tackle certain barriers
-	          <br><b>MIT CHIEF:</b> Dedicated to contributing to a global entrepreneurial ecosystem, equipping entrepreneurs with
-	          resources, immersing their startups into the US or Chinese markets
-	        </div>
-	      </div>
+	      
 	    </div>
 	  </section>
 	
   <a name="terms"></a>
   <section id="terms">
     <div class="title">
-      TERMS AND CONDITIONS
+      TIMELINE
     </div>
     <div class="content">
       <div class="term-item">
         <div class="term-heading">
-          Terms to receive funding
-        </div>
-        <ul class="terms-list">
-          <li>Attend the ProjX introductory dinner/first check in.</li>
-          <li>Provide evidence of progress at two additional check-ins.</li>
-          <li>Display your project at xFair in February 2016.</li>
-          <li>Allow TechX to use imagery and descriptions of your project on promotional materials.</li>
-          <li>Maintain communication with ProjX throughout the semester, including alerting ProjX if unexpected delays or problems
-            arise that may prevent you from displaying your project at xFair.</li>
-        </ul>
+         Early Fall 2016: Applications Open
+        </div>    
       </div>
       <div class="term-item">
         <div class="term-heading">
-          Other information about funding
+         January 1, 2017: Application deadline
         </div>
-        <ul class="terms-list">
-          <li>Funding will be provided as staged reimbursements. Up to $150 will be provided after check-in one, $300 after check-in two, and the remaining balance for a total of up to $500 after xFair.</li>
-<li>Only purchases of physical parts needed for the project are eligible for reimbursement. Examples of purchases not eligible for reimbursement include but are not limited to: server space, marketing, advertisements, location rental costs, and machine shop membership fees.</li>
-<li>Taxes will not be reimbursed. Tax-exemption forms are available however: present these when purchasing materials to avoid sales taxes.</li>
-<li>Proof of purchase and payment must be presented in a timely manner for reimbursement.</li>
-<li>Note that ProjX does not claim any rights to your project or intellectual property created using our funding.</li>
-        </ul>
+      </div>
+
+      <div class="term-item">
+        <div class="term-heading">
+         Mid Jan 2017: Semifinalists announced, mentorship starts
+        </div>
+      </div>
+
+      <div class="term-item">
+        <div class="term-heading">
+         Early February 2017: Semifinalists Trip to MIT
+        </div>
+      </div>
+
+      <div class="term-item">
+        <div class="term-heading">
+         April 2017: Project proposal completion, finalists chosen
+        </div>
+      </div>
+
+      <div class="term-item">
+        <div class="term-heading">
+         July 2017: Project completion
+        </div>
       </div>
     </div>
   </section>
 
   <footer>
+  	<div class = "sponsor">
+  		Sponsored by: <br /> <br />
+  		<img id = "reuters-logo" src = "images/reuters-logo.png" />
+  	</div>
     <div class="icons">
-      <a href="mailto:techx-exec@mit.edu"><i class="fa fa-envelope fa-2x"></i></a>
-      <a href="https://www.facebook.com/MITTechX" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
-      <a href="https://twitter.com/MITtechx" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
+      <a href="mailto:think@mit.edu"><i class="fa fa-envelope fa-2x"></i></a>
+      <a href="https://www.facebook.com/MIT-THINK-Scholars-Program-80872600025/?fref=ts" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
+      <a href="https://twitter.com/mit_think" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
     </div>
     <div class="copyright">
-      &copy; MIT TechX 2015 - <a id="constitution" href="http://techx.mit.edu/constitution.pdf" target="_blank"><i class="fa fa-file-text"></i></a>
+      &copy; MIT THINK 2016. Powered by TechX.
     </div>
     <div class="elevator">
-      <a id="elevator">Back to top</a>
+      <a id="elevator" href="#main">Back to top</a>
     </div>
   </footer>
 </body>
 
-<script src="scripts/jquery.min.js"></script>
-<script src="scripts/bootstrap.min.js"></script>
-<script src="scripts/elevator.min.js"></script>
-<script src="scripts/main.js"></script>
-<script type="text/javascript">
-  jQuery(document).ready(function($) {
-		$(".scroll").click(function(event){
-			event.preventDefault();
-			$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
-		});
-	});
 
-</script>
-<script type="application/x-javascript">
-  addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
-    function hideURLbar(){ window.scrollTo(0,1); }
-
-</script>
 
 </html>
