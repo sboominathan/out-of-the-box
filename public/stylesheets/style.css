@@ -1,13 +1,13 @@
 .title {
   color: #f2f6f9;
   font-size: 3em;
-  margin-bottom: 25px; }
+  margin-bottom: 0px; }
 
 #logo{
-	height:600px;
-	width: 700px;
-	margin-top: -200px;
-	margin-right: 10px;
+  height:281.48px;
+  width: 700px;
+  margin-top: -75px;
+  margin-right: 10px;
 }
 
 a {
@@ -61,25 +61,26 @@ nav.navbar.navbar-inverse {
       color: #99ddff; }
 
 .scroll{
-	background-color: #99ddff;
+  background-color: #99ddff;
 }
 nav{
-	transition-duration: 1s;
+  transition-duration: 1s;
 }
 
 #navbar-collapse{
-	transition-duration: 1s;
+  transition-duration: 1s;
 }
 
 #subtitle{
-	color: white;
-	font-family: "Open Sans", sans-serif;;
-	font-size: 20px;
-	margin-top: -75px;
+  color: white;
+  font-family: "Open Sans", sans-serif;;
+  font-size: 20px;
+  margin-top: -180px;
+  margin-bottom: 90px;
 }
 
 #main {
-  height: 100vh;
+  height: 109vh;
   width: 100vw;
   text-align: center;
   padding-top: 30vh; 
@@ -103,14 +104,48 @@ nav{
   #main .glyphicon {
     font-size: 1.75em; }
 
+#about2{
+  text-align: center;
+  padding-top: 90px;
+  padding-bottom: 240px; 
+  margin-top: 0px;
+  margin-bottom: 25px;
+  background-color: #05354e;
+  
+  }
+  #about2 .content {
+    max-width: 1150px;
+    margin: auto;
+    margin-left: 100px;
+    margin-right:100px;
+    padding: 0 15vw;
+    color: #99ddff;
+    font-size: 1.25em; }
+  #about2 .title{
+    color: white;
+  }
+  #about2 .about-item ul {
+    font-size: 0.75em;
+    
+    padding: 15px;
+    color: yellow }
+  #about2 .about-answer {
+    font-size: 1.2em;
+    
 
+    padding: 20px;
+    color: #99ddff; }
+  #about2 a {
+    font-weight: bold;
+  }
 
 #faq {
   text-align: center;
-  padding-top: 20vh;
-  padding-bottom: 0vh; 
-  margin-top: 40px;
-	}
+  padding-top: 10vh;
+  padding-bottom: 5vh; 
+  margin-top: 0px;
+  ;
+  }
   #faq .content {
     max-width: 1350px;
     margin: auto;
@@ -120,7 +155,7 @@ nav{
     color: #99ddff;
     font-size: 1.25em; }
   #faq .title{
-  	color: yellow;
+    color: white;
   }
   #faq .faq-item {
     padding: 15px;
@@ -143,63 +178,193 @@ nav{
 
 #terms {
   text-align: center;
-  padding-top: 10vh;
-  padding-bottom: 20vh; 
+  padding-top: 15vh;
+  padding-bottom: 20vh;
+  background-color: #05354e;
+  width: 50%;
+  float: left;
+  height: 600px;
+
+
 }
   #terms .title{
-  	color: yellow;
-  	margin-top: 15px;
+    color: white;
+    margin-top: -5px;
+    margin-bottom: 10px;
   }
   #terms .content {
     max-width: 1350px;
     margin: auto;
     text-align: center;
+    padding: 0 5vw;
+    padding-bottom: 15px;
+    color: yellow;
+    font-size: 1.25em; 
+  }
+  #terms .term-item ul {
+    font-size: 0.75em;
+    text-align: center;
+    padding: 5px;
+    color: yellow }
+  #terms .term-heading {
+    font-size: 0.9em;
+    text-align: center;
+    font-weight: bold;
+    padding: 15px;
+    color: #99ddff; }
+
+
+#partners {
+  text-align: center;
+  padding-top: 140px;
+  padding-bottom: 28.25vh;
+  overflow: hidden; 
+  background-color:  #05354e;
+  height: 600px;
+
+
+  
+}
+  #partners .title{
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+  #partners .content {
+    max-width: 1150px;
+    margin: auto;
+    margin-left: 0px;
+    margin-right:0px;
+    text-align: center;
+    padding: 0 5vw;
+    padding-bottom: 15px;
+    color: yellow;
+    font-size: 1.25em; 
+  }
+  #partners .partner-item ul {
+    font-size: 0.75em;
+    text-align: center;
+    padding: 5px;
+    color: #99ddff }
+  #partners .partner-heading {
+    font-size: 0.9em;
+    text-align: center;
+    font-weight: bold;
+    padding: 15px;
+    color: #99ddff; }
+  #partners .partner-text {
+    font-weight: normal;
+
+    text-align: center;
+    color: rgba(242, 246, 249, 0.6);
+    font-size: .8em;
+    padding: 15px;
+  }
+
+#sponsors {
+  text-align: center;
+  padding-top: 5vh;
+  padding-bottom: 10vh; 
+}
+  #sponsors .title{
+    color: white;
+    margin-top: 15px;
+  }
+  #sponsors .content {
+    max-width: 1150px;
+    margin: auto;
+    margin-left: 100px;
+    margin-right:100px;
+    text-align: center;
     padding: 0 15vw;
     padding-bottom: 15px;
     color: yellow;
     font-size: 1.25em; 
-	}
-  #terms .term-item ul {
+  }
+  #sponsors .sponsor-item ul {
     font-size: 0.75em;
     text-align: center;
     padding: 15px;
-    color: yellow }
-  #terms .term-heading {
-    font-size: 1em;
+    color: #99ddff }
+  #sponsors .sponsor-heading {
+    font-size: 1.1em;
     text-align: center;
     font-weight: bold;
-   	padding: 15px;
+    padding: 15px;
     color: #99ddff; }
+  #sponsors .sponsor-text {
+    font-weight: normal;
+
+    text-align: center;
+    color: rgba(242, 246, 249, 0.6);
+    font-size: .8em;
+    padding: 15px;
+  }
+
     
 
 
 footer {
   height: 100px;
-  color: rgba(242, 246, 249, 0.25); }
+  color: #99ddff; }
   footer .icons {
+    color: #99ddff;
     margin-bottom: 5px; }
     footer .icons a {
+      color: #99ddff;
       font-size: .75em;
       display: inline-block;
       margin: 0 5px; }
+    footer .icons a:hover{
+      color: white;
+    }
   footer .copyright {
+    color: #99ddff
     font-size: 1em;
     margin: 10px 0 5px 0; }
   footer .elevator {
+    color: #99ddff
     font-size: 0.8em;
     text-decoration: underline; }
+    footer a {
+    color:#99ddff;
+  }
 
-
-.sponsor {
-	text-align: center;
-	padding: 10px;
-	margin-top: -50px;
+.dates{
+  background-color:  #05354e !important;
+  height: 600px;
 }
+
 
 #reuters-logo{
-	height: 100px;
-	width: 100px;
-	padding: 10px;
-	margin-bottom: 10px;
+  height: 150px;
+  width: 200px;
+  padding: 15px;
+  margin-bottom: -10px;
+  margin-top: 15px;
 }
+
+a#contact{
+  color:white;
+}
+a#contact:hover{
+  color:#99ddff;
+}
+
+#border{
+  width: 2px;
+  background-color: white;
+  display: inline-block;
+  height: 400px;
+  margin-left: 0px;
+  margin-top: 100px;
+  float: left;
+  position: relative;
+
+  }
+
+  hr{
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
 /*# sourceMappingURL=style.css.map */
