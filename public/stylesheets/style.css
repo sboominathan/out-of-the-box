@@ -42,7 +42,7 @@ body {
   background: #1d1d1d; }
 
 nav.navbar.navbar-inverse {
-  background-color: #404040;
+  background-color: #05354e;
   border: none;
   font-size: 1.5em; }
   nav.navbar.navbar-inverse .navbar-nav {
@@ -76,7 +76,7 @@ nav{
   font-family: "Open Sans", sans-serif;;
   font-size: 20px;
   margin-top: -180px;
-  margin-bottom: 90px;
+  margin-bottom: 95px;
 }
 
 #main {
@@ -107,7 +107,7 @@ nav{
 #about2{
   text-align: center;
   padding-top: 90px;
-  padding-bottom: 240px; 
+  padding-bottom: 50px; 
   margin-top: 0px;
   margin-bottom: 25px;
   background-color: #05354e;
@@ -151,6 +151,7 @@ nav{
     margin: auto;
     margin-left: 0px;
     margin-right:0px;
+    margin-top: 15px;
     padding: 0 15vw;
     color: #99ddff;
     font-size: 1.25em; }
@@ -263,7 +264,7 @@ nav{
 
 #sponsors {
   text-align: center;
-  padding-top: 5vh;
+  padding-top: 11vh;
   padding-bottom: 10vh; 
 }
   #sponsors .title{
@@ -337,8 +338,8 @@ footer {
 
 
 #reuters-logo{
-  height: 150px;
-  width: 200px;
+  height: 175px;
+  width: 250px;
   padding: 15px;
   margin-bottom: -10px;
   margin-top: 15px;
@@ -364,7 +365,7 @@ a#contact:hover{
   }
 
   hr{
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 7px;
+    margin-bottom: 7px;
   }
 /*# sourceMappingURL=style.css.map */

@@ -11,8 +11,8 @@ $(document).ready(function(){
         	//$("#")
         }
         else{
-        	$("nav").css({"background-color":"#404040"});
-        	$("#navbar-collapse").css({"background-color":"#404040"});     
+        	$("nav").css({"background-color":"#05354e"});
+        	$("#navbar-collapse").css({"background-color":"#05354e"});     
         	/*$("#navbar-collapse").css({"background-color":"#1d1d1d"});
         	$("#blue").css({"color":"#99ddff"});
         	$("#about").css({"color":"rgba(242, 246, 249, 0.25)"});
