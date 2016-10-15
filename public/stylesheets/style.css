@@ -154,17 +154,21 @@ nav{
   padding: 0 15vw;
   color: #99ddff;
   font-size: 1.25em; }
+
 #faq .title{
   color: white;
+  margin-right: 25px;
 }
 #faq .faq-item {
   padding: 15px;
+
 }
 #faq .question {
   text-align: left;
   font-weight: bold;
   color: #99ddff;
   font-size: 1em;
+
 }
 #faq .answer {
   font-weight: normal;
@@ -188,7 +192,7 @@ nav{
 
 #terms .title{
   color: white;
-  margin-top: -5px;
+  margin-top: -5%;
   margin-bottom: 10px;
 }
 #terms .content {
@@ -363,4 +367,15 @@ hr{
     margin-top: 7px;
     margin-bottom: 7px;
 }
+
+.col-md-6 { 
+
+  width: 50% !important; 
+}
+ .row{
+  width: 100%;
+
+ }
+
+
 /*# sourceMappingURL=style.css.map */
