@@ -10,6 +10,8 @@ var connection = mysql.createConnection({
   database : 'think+think2017'
 });
 
+connection.connect();
+
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
@@ -36,7 +38,6 @@ router.post('/submit', function(req, res, next) {
 	  var interest = req.body.field14;
 	  var location = req.body.field15;
 
-	  connection.connect();
 
 	  var post  = {
 		  name: name,
