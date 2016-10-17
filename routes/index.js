@@ -10,7 +10,6 @@ var connection = mysql.createConnection({
   database : 'think+think2017'
 });
 
-connection.connect();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -55,12 +54,16 @@ router.post('/submit', function(req, res, next) {
 		  location: location
 	   };
 
+	 connection.connect();
+
 	connection.query('INSERT INTO out_of_the_box SET ?', post, function (err, result) {
 		if (err){
 			console.log(err);
 		} else{
 			console.log("New application received.");
 		}	
+		connection.end();
+
 	});
 
   res.render('submission', { title: 'Express' });
