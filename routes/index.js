@@ -54,7 +54,7 @@ router.post('/submit', function(req, res, next) {
 		  location: location
 	   };
 
-	 connection.connect();
+	 // connection.connect();
 
 	connection.query('INSERT INTO out_of_the_box SET ?', post, function (err, result) {
 		if (err){
@@ -62,7 +62,7 @@ router.post('/submit', function(req, res, next) {
 		} else{
 			console.log("New application received.");
 		}	
-		connection.end();
+		// connection.end();
 
 	});
 
