@@ -36,7 +36,7 @@ router.post('/submit', function(req, res, next) {
 	  var excitement = req.body.field13;
 	  var interest = req.body.field14;
 	  var location = req.body.field15;
-
+	  var group = req.body.group;
 
 	  var post  = {
 		  name: name,
@@ -51,7 +51,8 @@ router.post('/submit', function(req, res, next) {
 		  club: club,
 		  excitement: excitement,
 		  interest: interest,
-		  location: location
+		  location: location,
+		  group: group
 	   };
 
 	 // connection.connect();
