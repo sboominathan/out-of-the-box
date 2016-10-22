@@ -26,7 +26,7 @@ router.post('/submit', function(req, res, next) {
 	  var age = req.body.field5;
 	  var email = req.body.field2;
 	  var phone = req.body.field11;
-	  var address = req.body.field5;
+	  var address = req.body.field6;
 	  var city = req.body.field7;
 	  var state = req.body.field8;
 	  var zipCode = req.body.field9;
