@@ -3,14 +3,14 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="images/ootb-title-logo.jpeg" />
+  <link rel="shortcut icon" href="images/splashgraphic-logo.png" />
   <title> THINK: Out of the Box</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link href="stylesheets/style.css" rel='stylesheet' type='text/css' />
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css' />
-  <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,900' rel='stylesheet' type='text/css'>
-
+  <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,900' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src = "/javascripts/index.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
@@ -18,6 +18,9 @@
 </head>
 
 <body>
+
+  {{!-- Navigation Bar  --}}
+
   <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
       <div class="navbar-header">
@@ -31,244 +34,261 @@
 
       <div class="collapse navbar-collapse" id="navbar-collapse">
         <ul class="nav navbar-nav">
-          <li><a id="about" href = "#about2">ABOUT</a></li>
-          {{! <li><a id="blue" href = "/application">APPLY</a></li> }}
-          <li><a id="goto-faq" href ="#faq" >FAQ</a></li>
-          <li><a id="dates" href = "#terms">TIMELINE</a></li>
-          <li><a id="dates" href = "#partners">PARTNERS</a></li>
+          <li><a id="about" href = "#about2">about</a></li>
+          {{! <li><a id="blue" href = "/application">apply</a></li> }}
+          <li><a id="goto-faq" href ="#faq" >faq</a></li>
+          <li><a id="dates" href = "#timeline">timeline</a></li>
+          <li><a id="dates" href = "#partners">partners</a></li>
         </ul>
       </div>
+
     </div>
   </nav>
 
 
   <section id="main">
-    <img id = "logo" src = "images/ootb-logo.png" />
+     <img id = "logo" src = "images/splashgraphic.png" />
   </section>
 
   <section id="subtitle">
     <p>  An educational initiative for Boston high school students promoting science and technology  </p>
   </section>
 
+  {{!-- About Section --}}
+
   <section id="about2">
-  <div class="title">
-        What is Out of the Box?
-      </div>
-      <div class = "container">
-        <div class="content">
+    <img id = "corner1" src = "images/top-left-bracket.png" />
+    <div class="title">
+        <font color=#e1a836>WHAT IS</font> OUT OF THE BOX?
+    </div>
+
+    <div class = "container">
+      <div class="content">
         <div class="about-item">
-        <div class="about-answer">
-             Out of the Box is an initiative aimed at helping local students passionate about science develop their own innovative ideas to reality.  We partner MIT mentors 1-on-1 with students at Boston schools to work on projects of the student's design. 
-            </div>
-        </div>
-        
-         <div class = 'row'>
-          <div class = "col-lg-6">
-          <img id = "about-1" src = "images/ootb-about-1.png" />
+          <div class="about-answer">
+               <font color=#80c3d8>Out of the Box</font> is an initiative aimed at helping local <font color=#80c3d8>students</font> passionate about <font color=#80c3d8>science</font> develop their own innovative ideas to reality.  We partner <font color=#80c3d8>MIT mentors</font> 1-on-1 with students at Boston schools to work on projects of the student's design. 
           </div>
-          <div class = "col-lg-6">
-          <img id = "about-2" src = "images/ootb-about-2.png" />
-        
-      </div>
-      </div>
         </div>
+        
+        <div class = 'row'>
+          <div class = "col-md-6">
+            <img id = "about-1" src = "images/ootb-about-1.png" />
+          </div>
+          <div class = "col-md-6">
+            <img id = "about-2" src = "images/ootb-about-2.png" />
+          </div>
+        </div>
+
+      </div>
     </div>
       
-
+    <img id = "corner2" src = "images/bot-right-bracket.png" /> 
    
   </section>
   
-    <section id="faq">
-      <div class="title">
-        FAQ
-      </div>
-      <div class = "container-fluid">
+  <section id="faq">
+    <img id = "corner3" src = "images/top-right-bracket.png" />
+    
+    <div class="title">
+      FAQ
+    </div>
+
+    <div class = "container-fluid">
       <div class="content center-block">
         <div class = "row row-centered">
+          <div class = "col-md-6 col-centered">
+            <div class="faq-item">
+              <div class="question">
+               Who is eligible for Out of the Box?
+              </div>
+              <br />
+              <div class="answer">
+                Any full-time high school student and U.S. resident attending a public, private, or home-school in the Greater Boston Area at the time of his/her application, where the Greater Boston Area is defined as schools/homes within a 30-mile radius of Boston City Hall (1 City Hall Square, Boston, MA 02201).  All students who meet the eligibility requirements will be considered, but we especially encourage students to apply that satisfy the following criteria:
+                <br /> <br />
+                <ul>
+                  <li>Have little/zero experience participating in National Science Competitions/ Fairs/Olympiads or writing technical proposals</li>
+                  <li>Coming from a high school with low admittance rates to top-tier colleges, especially rural or predominantly minority high schools</li>
+                  <li>Potentially the first family member to attend college</li>
+                  <li>Absence of science and engineering degrees in family</li>
+                  <li>Underserved, defined as coming from low socioeconomic means, which may be indicated by qualification for free/reduced lunch</li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class = "col-md-6 col-centered">
+            <div class="faq-item">
+              <div class="question">
+                What should my proposal look like?
+              </div>
+              <br />
+              <div class="answer">
+                The Out of the Box competition is, at its core, about a cool idea or project that a student or group of students wants to develop; we encourage applicants to submit proposals in whatever form they feel best conveys their idea. The proposal should focus on summarizing your idea’s feasibility, impact, and innovation. Some examples of potential proposals are listed below, but feel free to utilize a method not listed.
+                <br /> <br />
+                <ul>
+                  <li> Written paper (1-2 pages total) </li>
+                  <li> Video (under 5 min length) submission </li>
+                </ul>
+                <br />
+
+              </div>
+            </div>
+        </div>
+      </div>
+
+
+      <div class = "row">
         <div class = "col-md-6 col-centered">
-        <div class="faq-item">
-          <div class="question">
-           Who is eligible for Out of the Box?
-          </div>
-           <br />
-          <div class="answer">
-            Any full-time high school student and U.S. resident attending a public, private, or home-school in the Greater Boston Area at the time of his/her application, where the Greater Boston Area is defined as schools/homes within a 30-mile radius of Boston City Hall (1 City Hall Square, Boston, MA 02201).  All students who meet the eligibility requirements will be considered, but we especially encourage students to apply that satisfy the following criteria:
-            <br /> <br />
-            <ul>
-              <li>Have little/zero experience participating in National Science Competitions/ Fairs/Olympiads or writing technical proposals</li>
-              <li>Coming from a high school with low admittance rates to top-tier colleges, especially rural or predominantly minority high schools</li>
-              <li>Potentially the first family member to attend college</li>
-              <li>Absence of science and engineering degrees in family</li>
-              <li>Underserved, defined as coming from low socioeconomic means, which may be indicated by qualification for free/reduced lunch</li>
-              </ul>
+          <div class="faq-item">
+            <div class="question">
+              How do I apply to the program?
+            </div>
+             <br />
+            <div class="answer">
+               Applications are closed for this year, and will open again early next fall!
+            </div>
           </div>
         </div>
-      </div>
-       <div class = "col-md-6 col-centered">
-        <div class="faq-item">
-          <div class="question">
-            What should my proposal look like?
-          </div>
-           <br />
-          <div class="answer">
-            The Out of the Box competition is, at its core, about a cool idea or project that a student or group of students wants to develop; we encourage applicants to submit proposals in whatever form they feel best conveys their idea. The proposal should focus on summarizing your idea’s feasibility, impact, and innovation. Some examples of potential proposals are listed below, but feel free to utilize a method not listed.
-            <br /> <br />
-            <ul>
-              <li> Written paper (1-2 pages total) </li>
-              <li> Video (under 5 min length) submission </li>
-            </ul>
+
+        <div class = "col-md-6 col-centered">
+          <div class="faq-item">
+            <div class="question">
+              How are the proposals evaluated?
+            </div>
             <br />
-
+            <div class="answer">
+              Proposals are evaluated by their feasibility, impact, and innovation, as well as the passion demonstrated by the student in their writing as well as in the answers to the additional short-answer questions.
+            </div>
           </div>
         </div>
-        </div>
       </div>
+
       <div class = "row">
-      <div class = "col-md-6 col-centered">
-        <div class="faq-item">
-          <div class="question">
-            How do I apply to the program?
-          </div>
+        <div class = "col-md-6">
+          <div class="faq-item">
+            <div class="question">
+              How does the program work, once the finalists are accepted?
+            </div>
            <br />
-          <div class="answer">
-             Applications are closed for this year, and will open again early next fall!
+            <div class="answer">
+              Once the finalists are accepted, they will work with mentors on the THINK team as well as MIT professors in the associated field to develop their project proposal further and learn more about the surrounding field of science.  After this process, the finalists that have demonstrated sufficient passion and dedication will selected as winners and be given $1,000 in seed funding to develop their projects to reality in the future, as well as $1,000 in an educational scholarship.
+            </div>
+          </div>
+        </div>
+        <div class = "col-md-6">
+          <div class="faq-item">
+            <div class="question">
+              How much does the program cost?
+            </div>
+             <br />
+            <div class="answer">
+              Out of the Box is completely free of charge, and we will also take care of any travel expenses and equipment costs.  Everything's on us!
+            </div>
           </div>
         </div>
       </div>
 
-      <div class = "col-md-6 col-centered">
-        <div class="faq-item">
-          <div class="question">
-            How are the proposals evaluated?
-          </div>
-           <br />
-          <div class="answer">
-            Proposals are evaluated by their feasibility, impact, and innovation, as well as the passion demonstrated by the student in their writing as well as in the answers to the additional short-answer questions.
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class = "row">
-      <div class = "col-md-6">
-        <div class="faq-item">
-          <div class="question">
-            How does the program work, once the finalists are accepted?
-          </div>
-           <br />
-          <div class="answer">
-            Once the finalists are accepted, they will work with mentors on the THINK team as well as MIT professors in the associated field to develop their project proposal further and learn more about the surrounding field of science.  After this process, the finalists that have demonstrated sufficient passion and dedication will selected as winners and be given $1,000 in seed funding to develop their projects to reality in the future, as well as $1,000 in an educational scholarship.
-          </div>
-        </div>
-      </div>
-      <div class = "col-md-6">
-        <div class="faq-item">
-          <div class="question">
-            How much does the program cost?
-          </div>
-           <br />
-          <div class="answer">
-            Out of the Box is completely free of charge, and we will also take care of any travel expenses and equipment costs.  Everything's on us!
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class = "row">
-      <div class = "col-md-6">
-        <div class="faq-item">
-          <div class="question">
-            How many students are accepted as finalists?  How many of these will be selected as winners?
-          </div>
-           <br />
-          <div class="answer">
-            There is no set number, but we expect to choose up to 15 students as finalists, and as many deserving finalists as possible as winners.  
-          </div>
-        </div>
-      </div>
 
-      <div class = "col-md-6">
-        <div class="faq-item">
-          <div class="question">
-            What if I'm not accepted as a finalist? Does Out of the Box have a place for me?
-          </div>
-           <br />
-          <div class="answer">
-            Yes, definitely!  For every applicant that applies, we will be hosting a preview weekend with lab tours, workshops about how to pursue research and science in general, as well as other fun activities.  Look out for more details about this weekend coming soon!  
-          </div>
-        </div>
-      </div>
       <div class = "row">
-         <div class = "col-md-3"></div>
+        <div class = "col-md-6">
+          <div class="faq-item">
+            <div class="question">
+              How many students are accepted as finalists?  How many of these will be selected as winners?
+            </div>
+             <br />
+            <div class="answer">
+              There is no set number, but we expect to choose up to 15 students as finalists, and as many deserving finalists as possible as winners.  
+            </div>
+          </div>
+        </div>
+
+        <div class = "col-md-6">
+          <div class="faq-item">
+            <div class="question">
+              What if I'm not accepted as a finalist? Does Out of the Box have a place for me?
+            </div>
+             <br />
+            <div class="answer">
+              Yes, definitely!  For every applicant that applies, we will be hosting a preview weekend with lab tours, workshops about how to pursue research and science in general, as well as other fun activities.  Look out for more details about this weekend coming soon!  
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class = "row">
+        <div class = "col-md-3"></div>
         <div class = "col-md-6">
           <div class="faq-item">
             <div class="question">
               I have a question not listed.  Who do I ask?  
             </div>
-             <br />
+            <br />
             <div class="answer">
               Please feel free to contact us through <a href="mailto:think@mit.edu">email</a>, <a href="https://www.facebook.com/MIT-THINK-Scholars-Program-80872600025/?fref=ts">facebook</a>, or <a href="https://twitter.com/mit_think">twitter</a>!
             </div>
           </div>
         </div>
         <div class = "col-md-3"></div>
+      </div>    
+    </div>
+    </div>
+    <img id = "corner4" src = "images/bot-left-bracket.png" /> 
+  </section>
+
+  <a name="timeline"></a>
+  <section id="timeline">
+      <img id="timeline-corner1" src="images/top-left-bracket.png">
+    <div class="title">
+      Timeline
+    </div>
+    <div class="content">
+      <div class="term-item">
+        <div class="term-heading">
+         Early Fall 2017: Applications Open
+        </div>    
       </div>
-        
+      <hr width="200" size = "10">
+      <div class="term-item">
+        <div class="term-heading">
+         January 1, 2018: Application deadline
+        </div>
+      </div>
+      <hr width="200" size = "10">
+      <div class="term-item">
+        <div class="term-heading">
+         Mid Jan 2018: Preview weekend for all applicants
+        </div>
+      </div>
+      <hr width="200" size = "10">
+      <div class="term-item">
+        <div class="term-heading">
+         Late Jan 2018: Finalists announced, mentorship starts
+        </div>
+      </div>
+      <hr width="200" size = "10">
+      <div class="term-item">
+        <div class="term-heading">
+         Early February 2018: Finalists Trip to MIT
+        </div>
+      </div>
+      <hr width="200" size = "10">
+      <div class="term-item">
+        <div class="term-heading">
+         March-April 2018: Project proposal completion
+        </div>
+      </div>
+      <hr width="200" size = "10">
+      <div class="term-item">
+        <div class="term-heading">
+         July 2018: Project completion, winners chosen
+        </div>
       </div>
     </div>
-    </section>
-  <div class = "dates">
-    <a name="terms"></a>
-    <section id="terms">
-      <div class="title">
-        Timeline
-      </div>
-      <div class="content">
-        <div class="term-item">
-          <div class="term-heading">
-           Early Fall 2016: Applications Open
-          </div>    
-        </div>
-        <hr width="200" size = "10">
-        <div class="term-item">
-          <div class="term-heading">
-           January 1, 2017: Application deadline
-          </div>
-        </div>
-        <hr width="200" size = "10">
-        <div class="term-item">
-          <div class="term-heading">
-           Mid Jan 2017: Preview weekend for all applicants
-          </div>
-        </div>
-        <hr width="200" size = "10">
-        <div class="term-item">
-          <div class="term-heading">
-           Late Jan 2017: Finalists announced, mentorship starts
-          </div>
-        </div>
-        <hr width="200" size = "10">
-        <div class="term-item">
-          <div class="term-heading">
-           Early February 2017: Finalists Trip to MIT
-          </div>
-        </div>
-        <hr width="200" size = "10">
-        <div class="term-item">
-          <div class="term-heading">
-           March-April 2017: Project proposal completion
-          </div>
-        </div>
-        <hr width="200" size = "10">
-        <div class="term-item">
-          <div class="term-heading">
-           July 2017: Project completion, winners chosen
-          </div>
-        </div>
-      </div>
-    </section>
+    <img id="timeline-corner2" src="images/bot-right-bracket.png">
+  </section>
 
-    <section id = "border">
-    </section>
    <section id = "partners">
+     <img id="partners-corner1" src="images/top-right-bracket.png">
       <div class="title">
         Partner Schools
       </div>
@@ -300,20 +320,16 @@
         </div>
         <div class="partner-item">
           <div class="partner-text">
-           Looking to partner with Out of the Box?  Please contact us through <a id = "contact" href="mailto:think@mit.edu">email</a>.  Partnering allows us to tailor Out of the Box specifically to your students' needs and gives your school more latitude in the selection of students to participate in the program.
- 
+              Looking to partner with Out of the Box?  Please contact us through <a id = "contact" href="mailto:think@mit.edu">email</a>.  Partnering allows us to tailor Out of the Box specifically to your students' needs and gives your school more latitude in the selection of students to participate in the program.
           </div>
         </div>
       </div>
+      <img id="partners-corner2" src="images/bot-left-bracket.png">
     </section>
 </div>
- <section id="sponsors">
-
+  <section id="sponsors">
       <div class="title">
         Sponsors
-
-         
-        </div>
       </div>
       <img id = "reuters-logo" src = "images/reuters-logo-2.png" />
       
