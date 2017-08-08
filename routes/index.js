@@ -5,8 +5,8 @@ var mysql = require('mysql');
 
 var connection = mysql.createConnection({
   host     : 'sql.mit.edu',
-  user     : 'think',
-  password : 'awesomeTHINK02139',
+  user     : 'USERNAME',
+  password : 'PASSWORD',
   database : 'think+think2017'
 });
 
